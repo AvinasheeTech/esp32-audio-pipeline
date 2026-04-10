@@ -8,7 +8,7 @@
 </h1>
 
 <h3 align="center">
-	Real World Audio Test with ICS43434 and ESP32
+	Real World Audio + Whisper STT Test with ICS43434 and ESP32
 </h3>
 
 
@@ -17,14 +17,12 @@
   
 ## 📝 Overview
 
-This repo covers datasheet discussion, pcb schematic and pinouts of ICS43434 mems microphone. Later on we focus on 
-implementation of ICS43434 with the ESP32 controller in idf environment with updated i2s drivers.  
-  
-The implementation focuses on basic i2s communication between the two devices and integration of a python script to further  
-send those i2s bytes over uart to PC where it is saved as a .wav audio file.  
+This repo focus on implementation of I2S communication of ICS43434 with the ESP32 controller in idf environment with updated i2s drivers.  
+There is an integration of a python script to further send those i2s bytes over uart to PC where it is saved as a .wav audio file.  
 
-  
-This .wav audio file helps us to understand the quality of audio captured by our mic and also to validate it's functionaility, do refer to our videos on YouTube.
+This .wav audio file helps us to understand the quality of audio captured by our mic and also to validate it's functionaility, do refer to our videos on YouTube.  
+In addition to this later on, OpenAI whisper Speech to Text feature was explored using the same hardware setup and adding python modules.   
+Models were downloaded on PC and then run offline on the saved .wav file. Multiple Languages were used to test STT output.
   
 Platform used for firmware development is ESP-IDF v5.0.6 on VSCode and Python 3.12.10 for audio script.  
 Learn more about this series 👇👇  
@@ -36,7 +34,14 @@ Part 2 👇
 [![ESP32_ICS43434_PART2_Youtube Video](img/ics43434_pt2_thumbnail.png)](https://youtu.be/JXZzgvJYjUo)  
 
 Part 3 👇  
-[![ESP32_SSD1306_PART3_Youtube Video](img/ics43434_pt3_thumbnail.png)](https://youtu.be/XXu9vCYK2z8)  
+[![ESP32_ICS43434_PART3_Youtube Video](img/ics43434_pt3_thumbnail.png)](https://youtu.be/XXu9vCYK2z8)  
+
+Part 4 👇  
+[![ESP32_ICS43434_PART4_Youtube Video](img/whisper1_thumbnail.png)](https://youtu.be/sVafaI70e1g)  
+
+Part 5 👇  
+[![ESP32_ICS43434_PART5_Youtube Video](img/whisper2_thumbnail.png)](https://youtu.be/GWShmxQCbJw)  
+
   
 ## ✔️ Requirements
 
